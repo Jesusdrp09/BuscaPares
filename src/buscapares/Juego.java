@@ -5,6 +5,7 @@
  */
 package buscapares;
 
+import javax.swing.JOptionPane;
 /**
  *
  * @author Lenovo
@@ -16,6 +17,7 @@ public class Juego extends javax.swing.JFrame {
      */
     public Juego() {
         initComponents();
+        this.setResizable(false);
     }
 
     /**
@@ -33,15 +35,15 @@ public class Juego extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Facil.setBackground(new java.awt.Color(102, 102, 102));
-        Facil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Facil.png"))); // NOI18N
+        Facil.setBackground(new java.awt.Color(51, 51, 51));
+        Facil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Facil.png.jpg"))); // NOI18N
         Facil.setPreferredSize(new java.awt.Dimension(200, 95));
         Facil.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 FacilMouseClicked(evt);
             }
         });
-        getContentPane().add(Facil, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, 50));
+        getContentPane().add(Facil, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 220, 70));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fondo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
